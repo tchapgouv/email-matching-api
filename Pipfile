@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Flask = "==2.0.1"
+PyYAML = "==5.4.1"
+APScheduler = "==3.7.0"
+GitPython = "==3.1.18"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+start = "python email_matching_api.py"
