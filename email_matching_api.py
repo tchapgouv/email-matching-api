@@ -40,13 +40,13 @@ def load_config():
         subprocess.run(["git", "clone", "-b", git_branch, "--depth", "1", repo_url, tmpdirname], check=True)
 
         # Load configuration from YAML file
-        with open(os.path.join(tmpdirname, config_file)) as f:
-            config = yaml.safe_load(f)
+        #with open(os.path.join(tmpdirname, config_file)) as f:
+        #    config = yaml.safe_load(f)
 
         # Prepare a dictionary to map each pattern to a platform
-        pattern_to_platform = {}
-        for pattern, platform in config['medium']['email']['patterns'].items():
-            pattern_to_platform[re.compile(pattern)] = platform
+        #pattern_to_platform = {}
+        #for pattern, platform in config['medium']['email']['patterns'].items():
+        #    pattern_to_platform[re.compile(pattern)] = platform
 
     logging.info("Configuration loaded.")
 
