@@ -50,9 +50,6 @@ def load_config():
 
     logging.info("Configuration loaded.")
 
-    # Remove the temporary SSH key file
-    os.unlink(ssh_key_file.name)
-
 # Call load_config at start
 load_config()
 
